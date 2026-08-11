@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="description" content="Tattva Bar & Café's Monsoon Menu — cocktails, small plates and desserts cooked for the rains. Dine-in & takeaway, no cover charge. Book on Zomato." />
+<title>Monsoon Menu | Tattva Bar & Café</title>
+<link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+<link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+<link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+<link rel="stylesheet preload" as="style" href="css/custom.css" />
+<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+<link rel="shortcut icon" href="img/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/menu.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,480;0,9..144,600;1,9..144,420&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet preload" as="style" href="css/monsoon.css" />
+
+</head>
+<body class="monsoon-page">
+
+<!-- ============ REAL SITE HEADER ============ -->
+<header class="header bg-header" data-page="menu" data-page-parent="@@parent">
+  <div class="container d-flex align-items-center justify-content-between flex-wrap flex-xl-nowrap">
+    <a class="logo h3" href="index.html">
+      <span class="logo_img">
+        <img src="img/dark-logo.webp" alt="Tattva Bar and Cafe Logo"/>
+      </span>
+    </a>
+    <nav class="header_nav text--medium text--md collapse" id="headerMenu">
+      <ul class="header_nav-list">
+        <li class="header_nav-list_item dropdown">
+          <a class="nav-link nav-item dropdown-toggle d-flex align-items-center" href="index.html"
+             data-bs-toggle="collapse" data-bs-target="#homeMenu" data-trigger="dropdown"
+             data-main-link="true" aria-expanded="false" aria-controls="homeMenu" data-page="home"
+             data-page-parent="home">
+            Home
+          </a>
+          <div class="dropdown-menu collapse" id="homeMenu"></div>
+        </li>
+        <li class="header_nav-list_item">
+          <a class="nav-item nav-link" href="about.html" data-page="about" data-single="true">
+            <span class="nav-item_text">About</span>
+          </a>
+        </li>
+        <li class="header_nav-list_item dropdown">
+          <a class="nav-link nav-item dropdown-toggle d-flex align-items-center" href="menu.html"
+             data-bs-toggle="collapse" data-bs-target="#blogMenu" data-trigger="dropdown"
+             data-page-parent="blog" data-main-link="true" aria-expanded="false" aria-controls="blogMenu"
+             data-page="blog">
+            <span class="nav-item_text">Menu</span>
+            <span class="icon"></span>
+          </a>
+          <div class="dropdown-menu collapse" id="blogMenu">
+            <ul class="dropdown-list">
+              <li class="list-item" data-main="true">
+                <a class="dropdown-item nav-item" data-page="menu" data-page-parent="blog" href="menu.html" data-main="true">Menu</a>
+              </li>
+              <li class="list-item">
+                <a class="dropdown-item nav-item" data-page="menu" data-page-parent="menu" href="festive-menu.html">Festive Menu</a>
+              </li>
+              <li class="list-item">
+                <a class="dropdown-item nav-item active" data-page="menu" data-page-parent="menu" href="monsoon-menu.html">Monsoon Menu</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="header_nav-list_item">
+          <a class="nav-item nav-link" href="events.html" data-page="events" data-single="true">
+            <span class="nav-item_text">Events</span>
+          </a>
+        </li>
+        <li class="header_nav-list_item">
+          <a class="nav-item nav-link" href="reservations.html" data-page="reservations" data-single="true">
+            <span class="nav-item_text">Reservation</span>
+          </a>
+        </li>
+        <li class="header_nav-list_item dropdown">
+          <a class="nav-link nav-item dropdown-toggle d-flex align-items-center" href="contacts.html"
+             data-bs-toggle="collapse" data-bs-target="#contactsMenu" data-trigger="dropdown"
+             data-page-parent="contacts" data-main-link="true" aria-expanded="false" aria-controls="contactsMenu">
+            Contact Us
+          </a>
+          <div class="dropdown-menu collapse" id="contactsMenu"></div>
+        </li>
+      </ul>
+      <ul class="header_nav-socials d-flex">
+        <li><a class="link" href="mailto:peninsularedpine230@gmail.com" target="_blank" rel="noopener noreferrer"><i class="icon-email icon"></i></a></li>
+        <li><a class="link" href="tel:+919967114757" target="_blank" rel="noopener noreferrer"><i class="icon-phone icon"></i></a></li>
+        <li><a class="link" href="https://www.facebook.com/people/Tattva-Mumbai/61556570516912/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><i class="icon-facebook icon"></i></a></li>
+        <li><a class="link" href="https://www.instagram.com/tattvabarandcafemumbai/?igsh=a3AxeHYyODM3ajY2&utm_source=qr" target="_blank" rel="noopener noreferrer"><i class="icon-instagram icon"></i></a></li>
+      </ul>
+    </nav>
+    <button class="header_trigger" id="headerTrigger" data-bs-toggle="collapse" data-bs-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" type="button">
+      <span class="line"></span><span class="line"></span><span class="line line--short"></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="m-hero">
+  <div class="m-rain" id="rain"></div>
+  <div class="m-hero-inner">
+    <span class="m-eyebrow">Tattva Bar &amp; Café · Andheri East, Mumbai</span>
+    <h1>The rains have<br>a <em>menu</em> now.</h1>
+    <p class="m-hero-sub">Small plates that steam, cocktails that warm, a rooftop that smells like the season's first rain — cooked up only for the monsoon.</p>
+    <div class="m-proof">
+      <span class="m-stars">★★★★★</span>
+      <span><strong class="mono">4.6</strong> · 2,000+ regulars</span>
+    </div>
+    <a href="#reserve" class="m-btn m-btn-gold">Reserve the Monsoon Table</a>
+    <p class="m-hero-note">No cover charge · Dine-in &amp; Takeaway</p>
+  </div>
+  <div class="m-scroll"></div>
+</section>
+
+<!-- ============ POETIC BAND ============ -->
+<section class="m-poetic">
+  <div class="m-wrap">
+    <div class="m-drop-row">
+      <svg viewBox="0 0 14 18" fill="currentColor"><path d="M7 0C7 0 0 9.2 0 12.5 0 15.5 3.1 18 7 18s7-2.5 7-5.5C14 9.2 7 0 7 0z"/></svg>
+    </div>
+    <p>The sound rain makes on tin roofs. The smell of wet earth through an open window. A cutting chai passed hand to hand, three sips exactly. That's the flavour we cooked this menu from.</p>
+  </div>
+</section>
+
+<!-- ============ NOSTALGIA ============ -->
+<section class="m-nostalgia">
+  <div class="m-wrap">
+    <div class="m-section-head">
+      <span class="m-eyebrow" style="color:var(--gold-deep);">Monsoon Diaries</span>
+      <h2>Postcards from the season</h2>
+      <p>Little memories the kitchen kept returning to while writing this menu.</p>
+    </div>
+    <div class="m-postcards">
+      <div class="m-postcard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 18c2-8 6-12 8-14 2 2 6 6 8 14"/><path d="M2 18h20"/></svg>
+        <h3>Petrichor</h3>
+        <p>That first-rain smell off hot pavement — nobody's ever bottled it, so we tried to plate it instead.</p>
+      </div>
+      <div class="m-postcard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 9h12l-1.5 9a2 2 0 0 1-2 1.7H9.5a2 2 0 0 1-2-1.7L6 9z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+        <h3>Cutting Chai</h3>
+        <p>Never a full glass — always split, always shared, always a little too hot to hold.</p>
+      </div>
+      <div class="m-postcard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M8 14l2 2 6-6"/></svg>
+        <h3>Tin Roof Song</h3>
+        <p>Every roof has its own drum-roll for rain. Ours has been playing since before this bar had a name.</p>
+      </div>
+      <div class="m-postcard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v3M4 20a8 8 0 0 1 16 0"/><path d="M4 20h16"/></svg>
+        <h3>The Borrowed Umbrella</h3>
+        <p>One umbrella, two people, one shoulder always wet — still the best seat in the city during June.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIP — dark wash ============ -->
+<section class="m-course m-course--dark" id="sip">
+  <div class="m-wrap">
+    <div class="m-course-head">
+      <span class="m-course-no">Act One</span>
+      <h2>Sip</h2>
+      <p>Cocktails and mocktails brewed for grey skies and rooftop views.</p>
+    </div>
+    <div class="m-dish-grid">
+      <article class="m-dish-card">
+        <div class="m-dish-image">
+          <img src="img/menu/Cutting Chai Old Fashioned.png" alt="Cutting Chai Old Fashioned cocktail" loading="lazy" />
+        </div>
+        <div class="m-dish-top"><h3>Cutting Chai Old Fashioned</h3><span class="m-price mono">₹650</span></div>
+        <p class="m-dish-ing">Bourbon · cardamom-chai reduction · orange bitters</p>
+        <div class="m-tags"><span class="m-tag">Chef's Pick</span><span class="m-tag">Served Warm</span></div>
+      </article>
+      <article class="m-dish-card">
+        <div class="m-dish-image">
+          <img src="img/menu/Petrichor Sour.png" alt="Petrichor Sour cocktail" loading="lazy" />
+        </div>
+        <div class="m-dish-top"><h3>Petrichor Sour</h3><span class="m-price mono">₹625</span></div>
+        <p class="m-dish-ing">Gin · kokum · rose-vetiver foam · fresh lime</p>
+        <div class="m-tags"><span class="m-tag">Monsoon Special</span><span class="m-tag">Tart</span></div>
+      </article>
+      <article class="m-dish-card">
+        <div class="m-dish-image">
+          <img src="img/menu/BBM.png" alt="Bhutta Bloody Mary cocktail" loading="lazy" />
+        </div>
+        <div class="m-dish-top"><h3>Bhutta Bloody Mary</h3><span class="m-price mono">₹595</span></div>
+        <p class="m-dish-ing">Vodka · roasted corn stock · tomato · chaat masala</p>
+        <div class="m-tags"><span class="m-tag">Savoury</span><span class="m-tag">Spiced</span></div>
+      </article>
+      <article class="m-dish-card">
+        <div class="m-dish-image">
+          <img src="img/menu/adrak mule.png" alt="Adrak Mule cocktail" loading="lazy" />
+        </div>
+        <div class="m-dish-top"><h3>Adrak Mule</h3><span class="m-price mono">₹575</span></div>
+        <p class="m-dish-ing">Dark rum · ginger beer · lemongrass · fresh ginger</p>
+        <div class="m-tags"><span class="m-tag">Vegan</span><span class="m-tag">Zingy</span></div>
+      </article>
+      <article class="m-dish-card">
+        <div class="m-dish-image">
+          <img src="img/menu/malabar mist.png" alt="Malabar Mist mocktail" loading="lazy" />
+        </div>
+        <div class="m-dish-top"><h3>Malabar Mist <span style="opacity:.6;font-size:.75rem;">(Mocktail)</span></h3><span class="m-price mono">₹375</span></div>
+        <p class="m-dish-ing">Coconut water · lemongrass · mint · soda</p>
+        <div class="m-tags"><span class="m-tag">Non-Alcoholic</span><span class="m-tag">Vegan</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SAVOR — gold wash ============ -->
+<section class="m-course m-course--gold" id="savor">
+  <div class="m-wrap">
+    <div class="m-course-head">
+      <span class="m-course-no">Act Two</span>
+      <h2>Savor</h2>
+      <p>Street-food classics, plated up for a rooftop.</p>
+    </div>
+    <div class="m-dish-grid">
+      <article class="m-dish-card">
+        <div class="m-dish-image">
+          <img src="img/menu/corn bhaji.png" alt="Corn and Cheese Bhajiya" loading="lazy" />
+        </div>
+        <div class="m-dish-top"><h3>Corn &amp; Cheese Bhajiya</h3><span class="m-price mono">₹345</span></div>
+        <p class="m-dish-ing">Sweet corn · cheddar · curry leaf · green chilli</p>
+        <div class="m-tags"><span class="m-tag">Vegetarian</span><span class="m-tag">Crowd Favourite</span></div>
+      </article>
+      <article class="m-dish-card">
+        <div class="m-dish-image">
+          <img src="img/menu/onion bhaji taco.png" alt="Smoked Kanda Bhaji Taco" loading="lazy" />
+        </div>
+        <div class="m-dish-top"><h3>Smoked Kanda Bhaji Taco</h3><span class="m-price mono">₹395</span></div>
+        <p class="m-dish-ing">Crisp onion fritter · mint-coriander chutney · soft tortilla</p>
+        <div class="m-tags"><span class="m-tag">Fusion</span><span class="m-tag">Spicy</span></div>
+      </article>
+      <article class="m-dish-card">
+        <div class="m-dish-image">
+          <img src="img/menu/bombay duck fry.png" alt="Bombay Duck Fry" loading="lazy" />
+        </div>
+        <div class="m-dish-top"><h3>Bombay Duck Fry</h3><span class="m-price mono">₹495</span></div>
+        <p class="m-dish-ing">Bombil · semolina crust · kokum-chilli masala</p>
+        <div class="m-tags"><span class="m-tag">Non-Veg</span><span class="m-tag">Coastal</span></div>
+      </article>
+      <article class="m-dish-card">
+        <div class="m-dish-image">
+          <img src="img/menu/khichdi arci.png" alt="Khichdi Arancini" loading="lazy" />
+        </div>
+        <div class="m-dish-top"><h3>Khichdi Arancini</h3><span class="m-price mono">₹365</span></div>
+        <p class="m-dish-ing">Moong dal khichdi · ghee · pickle aioli</p>
+        <div class="m-tags"><span class="m-tag">Comfort</span><span class="m-tag">Vegetarian</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDULGE — light wash ============ -->
+<section class="m-course m-course--light" id="indulge">
+  <div class="m-wrap">
+    <div class="m-course-head">
+      <span class="m-course-no">Act Three</span>
+      <h2>Indulge</h2>
+      <p>Desserts for the moment the rain finally slows down.</p>
+    </div>
+    <div class="m-dish-grid" style="max-width:900px;margin:0 auto;">
+      <article class="m-dish-card">
+        <div class="m-dish-image">
+          <img src="img\menu\Malpua Cheese cake.png" alt="Malpua Cheesecake" loading="lazy" />
+        </div>
+        <div class="m-dish-top"><h3>Malpua Cheesecake</h3><span class="m-price mono">₹425</span></div>
+        <p class="m-dish-ing">Saffron malpua crumble · rabri mousse</p>
+        <div class="m-tags"><span class="m-tag">Chef's Pick</span><span class="m-tag">Rich</span></div>
+      </article>
+      <article class="m-dish-card">
+        <div class="m-dish-image">
+          <img src="img/menu/Gud Chai.png" alt="Gud Chai Panna Cotta" loading="lazy" />
+        </div>
+        <div class="m-dish-top"><h3>Gud Chai Panna Cotta</h3><span class="m-price mono">₹395</span></div>
+        <p class="m-dish-ing">Jaggery-chai infusion · roasted almond</p>
+        <div class="m-tags"><span class="m-tag">Monsoon Special</span></div>
+      </article>
+      <article class="m-dish-card">
+        <div class="m-dish-image">
+          <img src="img/menu/gt.png" alt="Warm Gulab Jamun Trifle" loading="lazy" />
+        </div>
+        <div class="m-dish-top"><h3>Warm Gulab Jamun Trifle</h3><span class="m-price mono">₹365</span></div>
+        <p class="m-dish-ing">Gulab jamun · vanilla custard · pistachio</p>
+        <div class="m-tags"><span class="m-tag">Comfort</span><span class="m-tag">Sweet</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="m-why">
+  <div class="m-wrap">
+    <div class="m-section-head">
+      <span class="m-eyebrow" style="color:var(--gold-deep);">Why Tattva</span>
+      <h2>Built for a rainy evening</h2>
+    </div>
+    <div class="m-why-grid">
+      <div class="m-why-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 8l8 8M16 8l-8 8"/></svg>
+        <h3>No Cover Charge</h3>
+        <p>Walk in and settle down — no entry fee, ever.</p>
+      </div>
+      <div class="m-why-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20a8 8 0 0 1 16 0M12 3v3M4 20h16"/></svg>
+        <h3>Covered Rooftop</h3>
+        <p>Watch the rain from a dry, cushioned seat above the city.</p>
+      </div>
+      <div class="m-why-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/><path d="M3 7l3-4h12l3 4"/></svg>
+        <h3>Dine-in &amp; Takeaway</h3>
+        <p>Stay for the ambience, or take the monsoon menu home.</p>
+      </div>
+      <div class="m-why-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3v4M12 3v4M18 3v4M4 10h16v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9z"/></svg>
+        <h3>Chef-Curated</h3>
+        <p>A menu written only for these eight weeks of the year.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL PROOF ============ -->
+<section class="m-social-proof">
+  <div class="m-wrap">
+    <div class="m-section-head">
+      <span class="m-eyebrow" style="color:var(--gold);">In Their Words</span>
+      <h2 style="color:#fff;">What 2,000+ regulars are saying</h2>
+      <p>Real notes, pulled from where our guests actually leave them.</p>
+    </div>
+    <div class="m-review-grid">
+      <div class="m-review-card">
+        <div class="m-review-top">
+          <span class="m-review-stars">★★★★★</span>
+          <a class="m-source" href="https://www.google.com/search?sca_esv=b90884f24ac4e82c&sxsrf=APpeQnsWL25NcqV-Ee0YJPOndo81WWgNxQ:1786443482174&q=tattva+bar+and+cafe&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_1fxtyrhvwgUpbM0LQp4LctAM3eplJYCokJwiFU4fqS0E2qPhkroEcZ2jD3bagug0IVcipNQv7UbRLw6WpPcRFpJ20_dRE8rLLy0QCyi7WA0oM-hRA%3D%3D&sa=X&ved=2ahUKEwih66nJrJiWAxUemuEIHavHGzAQrrQLegQIHRAB" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+            Google
+          </a>
+        </div>
+        <p>Went for the monsoon specials and the Cutting Chai Old Fashioned alone was worth the drive from Bandra. The rooftop with the rain is unmatched.</p>
+        <span class="m-reviewer">Rhea M.</span>
+      </div>
+      <div class="m-review-card">
+        <div class="m-review-top">
+          <span class="m-review-stars">★★★★★</span>
+          <a class="m-source" href="https://www.zomato.com/mumbai/tattva-bar-cafe-andheri-east/reviews" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v3H4z"/><path d="M6 7v13h12V7"/><path d="M10 11h4"/></svg>
+            Zomato
+          </a>
+        </div>
+        <p>The Bombay Duck Fry and Khichdi Arancini are so far from a boring monsoon menu — properly seasonal, properly good. Booked again for next week already.</p>
+        <span class="m-reviewer">Kunal S.</span>
+      </div>
+      <div class="m-review-card">
+        <div class="m-review-top">
+          <span class="m-review-stars">★★★★★</span>
+          <a class="m-source" href="https://www.instagram.com/tattvabarandcafemumbai/?hl=en" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+            Instagram
+          </a>
+        </div>
+        <p>Sat through an entire downpour under the covered rooftop with a Petrichor Sour in hand. This is exactly what a Mumbai monsoon evening should feel like.</p>
+        <span class="m-reviewer">@mumbai.eats</span>
+      </div>
+    </div>
+
+    <div class="m-platform-row">
+      <a class="m-platform-btn" href="https://www.google.com/search?sca_esv=b90884f24ac4e82c&sxsrf=APpeQnsWL25NcqV-Ee0YJPOndo81WWgNxQ:1786443482174&q=tattva+bar+and+cafe&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_1fxtyrhvwgUpbM0LQp4LctAM3eplJYCokJwiFU4fqS0E2qPhkroEcZ2jD3bagug0IVcipNQv7UbRLw6WpPcRFpJ20_dRE8rLLy0QCyi7WA0oM-hRA%3D%3D&sa=X&ved=2ahUKEwih66nJrJiWAxUemuEIHavHGzAQrrQLegQIHRAB" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        See All Google Reviews
+      </a>
+      <a class="m-platform-btn" href="https://www.zomato.com/mumbai/tattva-bar-cafe-andheri-east/reviews" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v3H4z"/><path d="M6 7v13h12V7"/><path d="M10 11h4"/></svg>
+        See All Zomato Reviews
+      </a>
+      <a class="m-platform-btn" href="https://www.instagram.com/tattvabarandcafemumbai/?hl=en" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+        Follow on Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESERVE ============ -->
+<section class="m-reserve" id="reserve">
+  <div class="m-rain" id="rain2"></div>
+  <div class="m-reserve-inner">
+    <span class="m-eyebrow" style="color:var(--gold);">Reserve Your Table</span>
+    <h2 style="margin-top:16px;">Come sit with the rain.</h2>
+    <p>The monsoon menu runs only through the season — book ahead for rooftop seating, dine-in or takeaway.</p>
+    <div class="m-reserve-actions">
+      <a class="m-btn m-btn-gold" href="https://www.zomato.com/mumbai/tattva-bar-cafe-andheri-east" target="_blank" rel="noopener noreferrer">Book on Zomato</a>
+      <a class="m-btn m-btn-outline" href="https://wa.me/+919967114757" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+    </div>
+    <div class="m-reserve-meta">
+      <div><strong>Address</strong>7th Floor, Redpine Peninsula, Andheri East, Mumbai 400059</div>
+      <div><strong>Hours</strong>11:00 AM – 01:30 AM, Daily</div>
+      <div><strong>Call</strong>+91 99671 14757</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REAL SITE FOOTER ============ -->
+<footer class="footer section">
+  <div class="container d-flex">
+    <div class="footer_about">
+      <a class="logo h3" href="index.html">
+        <img src="img/dark-logo.webp" alt="Tattva Bar and Cafe Logo" width="140" height="100" />
+      </a>
+      <div class="wrapper">
+        <p class="footer_about-address text--sm text--bold">7th Floor, Redpine Peninsula,Andheri East, mumbai, Maharashtra, India, 400059</p>
+        <p class="footer_about-copyright text--sm">&copy; Tattva All Rights Reserved <span id="currentYear"></span></p>
+      </div>
+    </div>
+    <div class="footer_block">
+      <h4 class="footer_block-title">Contact Info</h4>
+      <ul class="footer_block-list text--bold text--md">
+        <li>
+          <a class="link" href="tel:+919967114757"> <i class="icon-phone icon"></i>+91 9967114757</a> <br>
+          <a class="link" href="tel:+919820645845"> <i class="icon-phone icon"></i>+91 9820645845</a>
+        </li>
+        <li>
+          <a class="link" href="mailto:peninsularedpine230@gmail.com"> <i class="icon-email icon"></i> peninsularedpine230@gmail.com </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer_block">
+      <h4 class="footer_block-title">Opening Hours</h4>
+      <ul class="footer_block-list text--md">
+        <li><span class="text--bold">Mon – Fri</span><b>-</b> 11:00 AM - 01:30 AM</li>
+        <li><span class="text--bold">Saturday</span> <b>-</b> 11:00 AM - 01:30 AM</li>
+        <li><span class="text--bold">Sunday</span><b>-</b> 11:00 AM - 01:30 AM</li>
+      </ul>
+    </div>
+    <div class="footer_block">
+      <h4 class="footer_block-title">Follow Our Activity</h4>
+      <p class="footer_block-subtitle text--md text--bold">We are in social networks</p>
+      <ul class="footer_block-socials d-flex">
+        <li><a class="link" href="https://www.facebook.com/people/Tattva-Mumbai/61556570516912/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><i class="icon-facebook icon"></i></a></li>
+        <li><a class="link" href="https://www.instagram.com/tattvabarandcafemumbai/?igsh=a3AxeHYyODM3ajY2&utm_source=qr" target="_blank" rel="noopener noreferrer"><i class="icon-instagram icon"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ REAL SITE FLOATING BUTTONS ============ -->
+<div class="floating-btn-container">
+  <a href="https://wa.me/919967114757">
+    <button class="floating-btn whatsapp-btn">
+      <img src="img/wa.png" alt="Whatsapp"/>
+      <span>WhatsApp</span>
+    </button>
+  </a>
+  <a href="https://maps.app.goo.gl/joL27wCsWQoGfS256">
+    <button class="floating-btn call-btn">
+      <img src="img/pin.png" alt="Location"/>
+      <span>Location</span>
+    </button>
+  </a>
+  <a href="#reserve">
+    <button class="floating-btn booking-btn">
+      <img src="img/reser.png" alt="Booking Icon"/>
+      <span>Reservation</span>
+    </button>
+  </a>
+</div>
+
+<script src="js/common.min.js"></script>
+<script>
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function makeRain(container, count){
+    if(!container || reduceMotion) return;
+    var frag = document.createDocumentFragment();
+    for(var i=0;i<count;i++){
+      var d = document.createElement('span');
+      d.style.left = (Math.random()*100)+'%';
+      d.style.height = (40 + Math.random()*90)+'px';
+      d.style.animationDuration = (1.4 + Math.random()*1.6)+'s';
+      d.style.animationDelay = (Math.random()*3)+'s';
+      d.style.opacity = 0.25 + Math.random()*0.45;
+      frag.appendChild(d);
+    }
+    container.appendChild(frag);
+  }
+  makeRain(document.getElementById('rain'), 70);
+  makeRain(document.getElementById('rain2'), 50);
+</script>
+</body>
+</html>
