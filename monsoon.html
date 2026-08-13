@@ -19,8 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,480;0,9..144,600;1,9..144,420&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet preload" as="style" href="css/monsoon.css" />
-
+<link rel="stylesheet preload" as="style" href="css/monsoon.min.css" />
 </head>
 <body class="monsoon-page">
 
@@ -102,13 +101,21 @@
   </div>
 </header>
 
+<main class="m-content">
 <!-- ============ HERO ============ -->
 <section class="m-hero">
   <div class="m-rain" id="rain"></div>
   <div class="m-hero-inner">
     <span class="m-eyebrow">Tattva Bar &amp; Café · Andheri East, Mumbai</span>
     <h1>The rains have<br>a <em>menu</em> now.</h1>
-    <p class="m-hero-sub">Small plates that steam, cocktails that warm, a rooftop that smells like the season's first rain — cooked up only for the monsoon.</p>
+
+    <div class="m-hero-video">
+      <video autoplay muted loop playsinline poster="img/monsoon-poster.jpg">
+        <source src="video/monsoon-rain.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <p class="m-hero-sub">Small plates that steam, cocktails that warm, a  that smells like the season's first rain — cooked up only for the monsoon.</p>
     <div class="m-proof">
       <span class="m-stars">★★★★★</span>
       <span><strong class="mono">4.6</strong> · 2,000+ regulars</span>
@@ -125,60 +132,61 @@
     <div class="m-drop-row">
       <svg viewBox="0 0 14 18" fill="currentColor"><path d="M7 0C7 0 0 9.2 0 12.5 0 15.5 3.1 18 7 18s7-2.5 7-5.5C14 9.2 7 0 7 0z"/></svg>
     </div>
-    <p>The sound rain makes on tin roofs. The smell of wet earth through an open window. A cutting chai passed hand to hand, three sips exactly. That's the flavour we cooked this menu from.</p>
+    <p>The sound rain makes on. The smell of wet earth through an open window. A cutting chai passed hand to hand, three sips exactly. That's the flavour we cooked this menu from.</p>
   </div>
 </section>
 
-<!-- ============ SIP — SLIDER ============ -->
+<!-- ===========Cocktail ============ -->
 <section class="m-course m-course--dark" id="sip">
   <div class="m-wrap">
     <div class="m-course-head">
       <span class="m-course-no">Act One</span>
-      <h2>Sip</h2>
-      <p>Cocktails and mocktails brewed for grey skies and rooftop views.</p>
+      <h2>Cocktail</h2>
+      <p>Cocktails and mocktails brewed for grey skies and  views.</p>
     </div>
     
     <div class="m-course-slider">
-      <div class="m-slider-wrapper" id="slider1">
-        <article class="m-dish-card">
+      <div class="m-slider-wrapper" id="slider1">        
+
+        <article class="m-dish-card m-dish-card--soldout">
           <div class="m-dish-image">
-            <img src="img/menu/Cutting Chai Old Fashioned.png" alt="Cutting Chai Old Fashioned cocktail" loading="lazy" />
+            <img src="img/menu/placeholder.png" alt="Purple Rain cocktail" loading="lazy" />
           </div>
-          <div class="m-dish-top"><h3>Cutting Chai Old Fashioned</h3><span class="m-price mono">₹650</span></div>
-          <p class="m-dish-ing">Bourbon · cardamom-chai reduction · orange bitters</p>
-          <div class="m-tags"><span class="m-tag">Chef's Pick</span><span class="m-tag">Served Warm</span></div>
+          <div class="m-dish-top"><h3>Purple Rain</h3><span class="m-price mono">Sold Out</span></div>
+          <p class="m-dish-ing">Jamun · gin &amp; vermouth highball — the first rains arrive stained in jamun purple, carrying whispers of wet earth and garden herbs</p>
+          <div class="m-tags"><span class="m-tag">Sold Out</span><span class="m-tag">Monsoon Special</span></div>
         </article>
         <article class="m-dish-card">
           <div class="m-dish-image">
-            <img src="img/menu/Petrichor Sour.png" alt="Petrichor Sour cocktail" loading="lazy" />
+            <img src="img/menu/Storm brew.png" alt="Storm Brew" loading="lazy" />
           </div>
-          <div class="m-dish-top"><h3>Petrichor Sour</h3><span class="m-price mono">₹625</span></div>
-          <p class="m-dish-ing">Gin · kokum · rose-vetiver foam · fresh lime</p>
-          <div class="m-tags"><span class="m-tag">Monsoon Special</span><span class="m-tag">Tart</span></div>
+          <div class="m-dish-top"><h3>Storm Brew</h3><span class="m-price mono">₹799</span></div>
+          <p class="m-dish-ing">Vodka · coffee tequila · chocolate &amp; soya espresso — dark clouds of coffee and chocolate before breaking into a silky, savoury downpour</p>
+          <div class="m-tags"><span class="m-tag">Bold</span><span class="m-tag">Rich</span></div>
         </article>
         <article class="m-dish-card">
           <div class="m-dish-image">
-            <img src="img/menu/BBM.png" alt="Bhutta Bloody Mary cocktail" loading="lazy" />
+            <img src="img/menu/MISTY ORCHARD.png" alt="Misty Orchard" loading="lazy" />
           </div>
-          <div class="m-dish-top"><h3>Bhutta Bloody Mary</h3><span class="m-price mono">₹595</span></div>
-          <p class="m-dish-ing">Vodka · roasted corn stock · tomato · chaat masala</p>
-          <div class="m-tags"><span class="m-tag">Savoury</span><span class="m-tag">Spiced</span></div>
+          <div class="m-dish-top"><h3>Misty Orchard</h3><span class="m-price mono">₹799</span></div>
+          <p class="m-dish-ing">Vodka · raspberry · coffee bean · black cardamom — a clean memory of monsoon berries and fragrant cardamom</p>
+          <div class="m-tags"><span class="m-tag">Fruity</span><span class="m-tag">Aromatic</span></div>
         </article>
         <article class="m-dish-card">
           <div class="m-dish-image">
-            <img src="img/menu/adrak mule.png" alt="Adrak Mule cocktail" loading="lazy" />
+            <img src="img/menu/FIRESIDE RAIN.png" alt="Fireside Rain" loading="lazy" />
           </div>
-          <div class="m-dish-top"><h3>Adrak Mule</h3><span class="m-price mono">₹575</span></div>
-          <p class="m-dish-ing">Dark rum · ginger beer · lemongrass · fresh ginger</p>
-          <div class="m-tags"><span class="m-tag">Vegan</span><span class="m-tag">Zingy</span></div>
+          <div class="m-dish-top"><h3>Fireside Rain</h3><span class="m-price mono">₹799</span></div>
+          <p class="m-dish-ing">Gold rum · rich chocolate · chipotle — the comfort of watching raindrops dance beyond the window</p>
+          <div class="m-tags"><span class="m-tag">Warm</span><span class="m-tag">Smoky</span></div>
         </article>
         <article class="m-dish-card">
           <div class="m-dish-image">
-            <img src="img/menu/malabar mist.png" alt="Malabar Mist mocktail" loading="lazy" />
+<img src="img/menu/Cloud walker.png" alt="Cloud Walker" loading="lazy" />
           </div>
-          <div class="m-dish-top"><h3>Malabar Mist <span style="opacity:.6;font-size:.75rem;">(Mocktail)</span></h3><span class="m-price mono">₹375</span></div>
-          <p class="m-dish-ing">Coconut water · lemongrass · mint · soda</p>
-          <div class="m-tags"><span class="m-tag">Non-Alcoholic</span><span class="m-tag">Vegan</span></div>
+          <div class="m-dish-top"><h3>Cloud Walker</h3><span class="m-price mono">₹799</span></div>
+          <p class="m-dish-ing">Brandy — warm, umami rich and quietly complex, like wandering through mountain mist after a passing shower</p>
+          <div class="m-tags"><span class="m-tag">Complex</span><span class="m-tag">Warm</span></div>
         </article>
       </div>
       
@@ -191,48 +199,104 @@
   </div>
 </section>
 
-<!-- ============ SAVOR — SLIDER ============ -->
+<!-- ============ Food — SLIDER ============ -->
 <section class="m-course m-course--gold" id="savor">
   <div class="m-wrap">
     <div class="m-course-head">
       <span class="m-course-no">Act Two</span>
-      <h2>Savor</h2>
-      <p>Street-food classics, plated up for a rooftop.</p>
+      <h2>Food</h2>
+      <p>Street-food classics, plated up for a .</p>
     </div>
     
     <div class="m-course-slider">
       <div class="m-slider-wrapper" id="slider2">
+        <article class="m-dish-card m-dish-card--soldout">
+          <div class="m-dish-image">
+            <img src="img/menu/placeholder.png" alt="Charred Root and Fresh Mozzarella Salad" loading="lazy" />
+          </div>
+          <div class="m-dish-top"><h3>Charred Root &amp; Fresh Mozzarella Salad</h3><span class="m-price mono">Sold Out</span></div>
+          <p class="m-dish-ing">Earthy roasted roots, luscious creamy base, fresh rocket leaves tossed in a zesty Greek dressing, topped with sev, nuts &amp; pomegranates</p>
+          <div class="m-tags"><span class="m-tag">Vegetarian</span><span class="m-tag">Vegetarian</span></div>
+        </article>
+        <article class="m-dish-card m-dish-card--soldout">
+          <div class="m-dish-image">
+            <img src="img/menu/placeholder.png" alt="Harumaki Spring Roll" loading="lazy" />
+          </div>
+          <div class="m-dish-top"><h3>Harumaki Spring Roll</h3><span class="m-price mono">Sold Out</span></div>
+          <p class="m-dish-ing">Earthy mushrooms, smoky charred corn, and creamy melted cheeses in a perfectly indulgent combination</p>
+          <div class="m-tags"><span class="m-tag">Vegetarian</span><span class="m-tag">Vegetarian</span></div>
+        </article>      
         <article class="m-dish-card">
           <div class="m-dish-image">
-            <img src="img/menu/corn bhaji.png" alt="Corn and Cheese Bhajiya" loading="lazy" />
+            <img src="img/menu/bruschetta dabeli.png" alt="Bruschetta À La Dabeli" loading="lazy" />
           </div>
-          <div class="m-dish-top"><h3>Corn &amp; Cheese Bhajiya</h3><span class="m-price mono">₹345</span></div>
-          <p class="m-dish-ing">Sweet corn · cheddar · curry leaf · green chilli</p>
-          <div class="m-tags"><span class="m-tag">Vegetarian</span><span class="m-tag">Crowd Favourite</span></div>
+          <div class="m-dish-top"><h3>Bruschetta À La Dabeli</h3><span class="m-price mono">₹389</span></div>
+          <p class="m-dish-ing">Spiced potato masala · toasted crostini · tamarind glaze · masala peanuts</p>
+          <div class="m-tags"><span class="m-tag">Vegetarian</span><span class="m-tag">Chef's Pick</span></div>
         </article>
         <article class="m-dish-card">
           <div class="m-dish-image">
-            <img src="img/menu/onion bhaji taco.png" alt="Smoked Kanda Bhaji Taco" loading="lazy" />
+            <img src="img/menu/kurkure palak chaat.png" alt="Kurkure Palak Ki Chaat" loading="lazy" />
           </div>
-          <div class="m-dish-top"><h3>Smoked Kanda Bhaji Taco</h3><span class="m-price mono">₹395</span></div>
-          <p class="m-dish-ing">Crisp onion fritter · mint-coriander chutney · soft tortilla</p>
-          <div class="m-tags"><span class="m-tag">Fusion</span><span class="m-tag">Spicy</span></div>
+          <div class="m-dish-top"><h3>Kurkure Palak Ki Chaat</h3><span class="m-price mono">₹419</span></div>
+          <p class="m-dish-ing">Crisped spinach leaves · sweet yoghurt · tamarind-pomegranate dip · fried capers</p>
+          <div class="m-tags"><span class="m-tag">Vegetarian</span><span class="m-tag">Tangy</span></div>
         </article>
         <article class="m-dish-card">
           <div class="m-dish-image">
-            <img src="img/menu/bombay duck fry.png" alt="Bombay Duck Fry" loading="lazy" />
+            <img src="img/menu/The not meat chapli kebab.png" alt="The Not Meat Chapli Kebab" loading="lazy" />
           </div>
-          <div class="m-dish-top"><h3>Bombay Duck Fry</h3><span class="m-price mono">₹495</span></div>
-          <p class="m-dish-ing">Bombil · semolina crust · kokum-chilli masala</p>
+          <div class="m-dish-top"><h3>The Not Meat Chapli Kebab</h3><span class="m-price mono">₹499</span></div>
+          <p class="m-dish-ing">Delicately spiced, soft and tender soy-based kebabs, served with flaky paratha, refreshing tzatziki sauce, and fresh mint sauce</p>
+          <div class="m-tags"><span class="m-tag">Vegetarian</span><span class="m-tag">Plant-Based</span></div>
+        </article>
+        <article class="m-dish-card">
+          <div class="m-dish-image">
+            <img src="img/menu/Pear & black currant CROSTINI.png" alt="Pear & Black Currant Crostini" loading="lazy" />
+          </div>
+          <div class="m-dish-top"><h3>Pear &amp; Black Currant Crostini</h3><span class="m-price mono">₹549</span></div>
+          <p class="m-dish-ing">Sweet caramelised pear meets tart black currant and java plum, finished with feta cream, crispy kale, balsamic glaze, and sourdough</p>
+          <div class="m-tags"><span class="m-tag">Vegetarian</span><span class="m-tag">Chef's Pick</span></div>
+        </article>
+        <article class="m-dish-card">
+          <div class="m-dish-image">
+            <img src="img/menu/Spiced Chicken tart.png" alt="Spiced Chicken Tart" loading="lazy" />
+          </div>
+          <div class="m-dish-top"><h3>Spiced Chicken Tart</h3><span class="m-price mono">₹549</span></div>
+          <p class="m-dish-ing">Thai-spiced chicken served in a crisp tart with apple-cucumber salsa and spicy aioli</p>
+          <div class="m-tags"><span class="m-tag">Non-Veg</span><span class="m-tag">Fusion</span></div>
+        </article>
+        <article class="m-dish-card">
+          <div class="m-dish-image">
+            <img src="img/menu/Fire roasted chicken.png" alt="Fire Roasted Chicken" loading="lazy" />
+          </div>
+          <div class="m-dish-top"><h3>Fire Roasted Chicken</h3><span class="m-price mono">₹599</span></div>
+          <p class="m-dish-ing">Charred salsa · smoked butter jus · herb oil</p>
+          <div class="m-tags"><span class="m-tag">Non-Veg</span><span class="m-tag">Smoky</span></div>
+        </article>
+        <article class="m-dish-card">
+          <div class="m-dish-image">
+            <img src="img/menu/Chilly Crab CROQUETTES.png" alt="Chilly Crab Croquettes" loading="lazy" />
+          </div>
+          <div class="m-dish-top"><h3>Chilly Crab Croquettes</h3><span class="m-price mono">₹649</span></div>
+          <p class="m-dish-ing">Crunchy crab croquettes served with rich dynamite sauce and crispy kale garnish</p>
           <div class="m-tags"><span class="m-tag">Non-Veg</span><span class="m-tag">Coastal</span></div>
         </article>
         <article class="m-dish-card">
           <div class="m-dish-image">
-            <img src="img/menu/khichdi arci.png" alt="Khichdi Arancini" loading="lazy" />
+            <img src="img/menu/seared chicken.png" alt="Seared Chicken" loading="lazy" />
           </div>
-          <div class="m-dish-top"><h3>Khichdi Arancini</h3><span class="m-price mono">₹365</span></div>
-          <p class="m-dish-ing">Moong dal khichdi · ghee · pickle aioli</p>
-          <div class="m-tags"><span class="m-tag">Comfort</span><span class="m-tag">Vegetarian</span></div>
+          <div class="m-dish-top"><h3>Seared Chicken</h3><span class="m-price mono">₹699</span></div>
+          <p class="m-dish-ing">Kokani thecha · spiced pumpkin · chilli-garlic thecha · warm spiced pumpkin puree</p>
+          <div class="m-tags"><span class="m-tag">Non-Veg</span><span class="m-tag">Spicy</span></div>
+        </article>
+        <article class="m-dish-card">
+          <div class="m-dish-image">
+            <img src="img/menu/grilled rawas.png" alt="Grilled Rawas" loading="lazy" />
+          </div>
+          <div class="m-dish-top"><h3>Grilled Rawas</h3><span class="m-price mono">₹819</span></div>
+          <p class="m-dish-ing">Smoky cilantro fish sauce · chilli herb-marinated grilled fish · crispy potato · sautéed asparagus · gourd fresh salad</p>
+          <div class="m-tags"><span class="m-tag">Non-Veg</span><span class="m-tag">Coastal</span></div>
         </article>
       </div>
       
@@ -245,40 +309,41 @@
   </div>
 </section>
 
-<!-- ============ INDULGE — SLIDER ============ -->
+<!-- ============ Dessert — SLIDER ============ -->
 <section class="m-course m-course--light" id="indulge">
   <div class="m-wrap">
     <div class="m-course-head">
       <span class="m-course-no">Act Three</span>
-      <h2>Indulge</h2>
+      <h2>Dessert</h2>
       <p>Desserts for the moment the rain finally slows down.</p>
     </div>
     
     <div class="m-course-slider">
       <div class="m-slider-wrapper" id="slider3">
+
         <article class="m-dish-card">
           <div class="m-dish-image">
-            <img src="img/menu/Malpua Cheese cake.png" alt="Malpua Cheesecake" loading="lazy" />
+            <img src="img/menu/placeholder.png" alt="White Chocolate Panacota" loading="lazy" />
           </div>
-          <div class="m-dish-top"><h3>Malpua Cheesecake</h3><span class="m-price mono">₹425</span></div>
-          <p class="m-dish-ing">Saffron malpua crumble · rabri mousse</p>
-          <div class="m-tags"><span class="m-tag">Chef's Pick</span><span class="m-tag">Rich</span></div>
+          <div class="m-dish-top"><h3>White Chocolate Panacota</h3><span class="m-price mono">₹539</span></div>
+          <p class="m-dish-ing">Creamy panna cotta layered with crisp shortbread, jamun gel, macerated jamun, and airy vanilla bean mousse</p>
+          <div class="m-tags"><span class="m-tag">Chef's Pick</span><span class="m-tag">Creamy</span></div>
         </article>
         <article class="m-dish-card">
           <div class="m-dish-image">
-            <img src="img/menu/Gud Chai.png" alt="Gud Chai Panna Cotta" loading="lazy" />
+            <img src="img/menu/placeholder.png" alt="Chocolate Fondue" loading="lazy" />
           </div>
-          <div class="m-dish-top"><h3>Gud Chai Panna Cotta</h3><span class="m-price mono">₹395</span></div>
-          <p class="m-dish-ing">Jaggery-chai infusion · roasted almond</p>
-          <div class="m-tags"><span class="m-tag">Monsoon Special</span></div>
+          <div class="m-dish-top"><h3>Chocolate Fondue</h3><span class="m-price mono">₹549</span></div>
+          <p class="m-dish-ing">White chocolate ganache with rich fudge brownies, eggless herbed crackers, and crisp honey toast</p>
+          <div class="m-tags"><span class="m-tag">Sharing</span><span class="m-tag">Rich</span></div>
         </article>
         <article class="m-dish-card">
           <div class="m-dish-image">
-            <img src="img/menu/gt.png" alt="Warm Gulab Jamun Trifle" loading="lazy" />
+            <img src="img/menu/placeholder.png" alt="Chocolate Pudding Cake" loading="lazy" />
           </div>
-          <div class="m-dish-top"><h3>Warm Gulab Jamun Trifle</h3><span class="m-price mono">₹365</span></div>
-          <p class="m-dish-ing">Gulab jamun · vanilla custard · pistachio</p>
-          <div class="m-tags"><span class="m-tag">Comfort</span><span class="m-tag">Sweet</span></div>
+          <div class="m-dish-top"><h3>Chocolate Pudding Cake</h3><span class="m-price mono">₹649</span></div>
+          <p class="m-dish-ing">Warm chocolate cake with a molten self-saucing centre, finished with a hot espresso pour</p>
+          <div class="m-tags"><span class="m-tag">Chef's Pick</span><span class="m-tag">Warm</span></div>
         </article>
       </div>
       
@@ -287,6 +352,53 @@
         <button class="m-slider-btn" data-slider="3" data-dir="next">›</button>
       </div>
       <div class="m-slider-dots" id="dots3"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Mocktail============ -->
+<section class="m-course m-course--light" id="digest">
+  <div class="m-wrap">
+    <div class="m-course-head">
+      <span class="m-course-no">Act Four</span>
+      <h2>Mocktail</h2>
+      <p>A little something warm to see the rain out.</p>
+    </div>
+    
+    <div class="m-course-slider">
+      <div class="m-slider-wrapper" id="slider4">
+
+        <article class="m-dish-card">
+          <div class="m-dish-image">
+            <img src="img/menu/saunf paan shot.png" alt="Jamun Rush mocktail" loading="lazy" />
+          </div>
+          <div class="m-dish-top"><h3>Jamun Rush</h3><span class="m-price mono">₹499</span></div>
+          <p class="m-dish-ing">A vibrant non-alcoholic creation blending jamun juice with black currant, lime juice, and mint leaves, topped with ginger ale for a refreshing finish</p>
+          <div class="m-tags"><span class="m-tag">Non-Alcoholic</span><span class="m-tag">Refreshing</span></div>
+        </article>
+        <article class="m-dish-card">
+          <div class="m-dish-image">
+           <img src="img/menu/Citrus Heat.png" alt="Citrus Heat mocktail" loading="lazy" />
+          </div>
+          <div class="m-dish-top"><h3>Citrus Heat</h3><span class="m-price mono">₹449</span></div>
+          <p class="m-dish-ing">A sparkling yuzu cooler with spicy jalapeño, citrus tang, and a bold Tajín salt rim</p>
+          <div class="m-tags"><span class="m-tag">Non-Alcoholic</span><span class="m-tag">Spicy</span></div>
+        </article>
+        <article class="m-dish-card">
+          <div class="m-dish-image">
+            <img src="img/menu/Blue sky pour.png" alt="Blue Sky Pour mocktail" loading="lazy" />
+          </div>
+          <div class="m-dish-top"><h3>Blue Sky Pour</h3><span class="m-price mono">₹495</span></div>
+          <p class="m-dish-ing">A cooling, sky-blue non-alcoholic pour built for clearing skies</p>
+          <div class="m-tags"><span class="m-tag">Non-Alcoholic</span></div>
+        </article>
+      </div>
+      
+      <div class="m-slider-controls">
+        <button class="m-slider-btn" data-slider="4" data-dir="prev">‹</button>
+        <button class="m-slider-btn" data-slider="4" data-dir="next">›</button>
+      </div>
+      <div class="m-slider-dots" id="dots4"></div>
     </div>
   </div>
 </section>
@@ -306,7 +418,7 @@
       </div>
       <div class="m-why-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20a8 8 0 0 1 16 0M12 3v3M4 20h16"/></svg>
-        <h3>Covered Rooftop</h3>
+        <h3>Covered</h3>
         <p>Watch the rain from a dry, cushioned seat above the city.</p>
       </div>
       <div class="m-why-item">
@@ -340,7 +452,7 @@
             Google
           </a>
         </div>
-        <p>Went for the monsoon specials and the Cutting Chai Old Fashioned alone was worth the drive from Bandra. The rooftop with the rain is unmatched.</p>
+        <p>Went for the monsoon specials and the Cutting Chai Old Fashioned alone was worth the drive from Bandra. The  with the rain is unmatched.</p>
         <span class="m-reviewer">Rhea M.</span>
       </div>
       <div class="m-review-card">
@@ -362,7 +474,7 @@
             Instagram
           </a>
         </div>
-        <p>Sat through an entire downpour under the covered rooftop with a Petrichor Sour in hand. This is exactly what a Mumbai monsoon evening should feel like.</p>
+        <p>Sat through an entire downpour under the covered  with a Petrichor Sour in hand. This is exactly what a Mumbai monsoon evening should feel like.</p>
         <span class="m-reviewer">@mumbai.eats</span>
       </div>
     </div>
@@ -390,7 +502,7 @@
   <div class="m-reserve-inner">
     <span class="m-eyebrow" style="color:var(--gold);">Reserve Your Table</span>
     <h2 style="margin-top:16px;">Come sit with the rain.</h2>
-    <p>The monsoon menu runs only through the season — book ahead for rooftop seating, dine-in or takeaway.</p>
+    <p>The monsoon menu runs only through the season — book ahead for  seating, dine-in or takeaway.</p>
     <div class="m-reserve-actions">
       <a class="m-btn m-btn-gold" href="https://www.zomato.com/mumbai/tattva-bar-cafe-andheri-east" target="_blank" rel="noopener noreferrer">Book on Zomato</a>
       <a class="m-btn m-btn-outline" href="https://wa.me/+919967114757" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
@@ -402,6 +514,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <!-- ============ REAL SITE FOOTER ============ -->
 <footer class="footer section">
@@ -586,6 +699,7 @@
   initSlider('slider1', 'dots1');
   initSlider('slider2', 'dots2');
   initSlider('slider3', 'dots3');
+  initSlider('slider4', 'dots4');
 </script>
 </body>
 </html>
