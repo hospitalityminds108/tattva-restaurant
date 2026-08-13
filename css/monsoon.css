@@ -176,3 +176,113 @@ html{scroll-behavior:smooth;}
 .m-course--light .m-dish-image {
   background: rgba(0,0,0,0.04);
 }
+
+/* ===== SLIDER STYLES ===== */
+.m-course-slider {
+  overflow: hidden;
+  position: relative;
+  padding: 40px 0;
+}
+
+.m-slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 24px;
+}
+
+.m-slider-wrapper .m-dish-card {
+  flex: 0 0 calc(33.333% - 16px);
+  min-width: 280px;
+}
+
+.m-slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.m-slider-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--gold, #c9a84c);
+  background: transparent;
+  color: var(--gold, #c9a84c);
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.m-slider-btn:hover {
+  background: var(--gold, #c9a84c);
+  color: #1a1a1a;
+}
+
+.m-slider-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.m-slider-dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.m-slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.m-slider-dot.active {
+  background: var(--gold, #c9a84c);
+  width: 30px;
+  border-radius: 5px;
+}
+
+.m-course--dark .m-slider-dot {
+  background: rgba(255,255,255,0.2);
+}
+
+.m-course--dark .m-slider-dot.active {
+  background: var(--gold, #c9a84c);
+}
+
+.m-course--gold .m-slider-dot {
+  background: rgba(0,0,0,0.2);
+}
+
+.m-course--gold .m-slider-dot.active {
+  background: var(--gold-deep, #a8892e);
+}
+
+/* ===== HERO PADDING ===== */
+.m-hero-inner {
+  padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .m-slider-wrapper .m-dish-card {
+    flex: 0 0 calc(100% - 16px);
+  }
+  .m-hero-inner {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .m-slider-wrapper .m-dish-card {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
