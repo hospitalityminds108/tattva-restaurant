@@ -1,25 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<meta name="description" content="Tattva Bar & Café's Monsoon Menu — cocktails, small plates and desserts cooked for the rains. Dine-in & takeaway, no cover charge. Book on Zomato." />
-<title>Monsoon Menu | Tattva Bar & Café</title>
-<link rel="stylesheet preload" as="style" href="css/preload.min.css" />
-<link rel="stylesheet preload" as="style" href="css/icomoon.css" />
-<link rel="stylesheet preload" as="style" href="css/libs.min.css" />
-<link rel="stylesheet preload" as="style" href="css/custom.css" />
-<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
-<link rel="shortcut icon" href="img/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/menu.min.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,480;0,9..144,600;1,9..144,420&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet preload" as="style" href="css/monsoon.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Tattva Bar & Café's Monsoon Menu — cocktails, small plates and desserts cooked for the rains. Dine-in & takeaway, no cover charge. Book on Zomato." />
+  <title>Monsoon Menu | Tattva Bar & Café</title>
+  <!-- preloads & styles -->
+  <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+  <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+  <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+  <link rel="stylesheet preload" as="style" href="css/custom.css" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/menu.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,480;0,9..144,600;1,9..144,420&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet preload" as="style" href="css/monsoon.min.css" />
+  <style>
+    /* carousel overrides */
+    .m-hero-carousel {
+      position: relative;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    .m-carousel-track {
+      display: flex;
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      will-change: transform;
+    }
+    .m-carousel-slide {
+      flex: 0 0 100%;
+      aspect-ratio: 16 / 9;
+      background: #1e1a16;
+    }
+    .m-carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .m-carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.4);
+      border: none;
+      color: #fff;
+      font-size: 2.2rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      cursor: pointer;
+      backdrop-filter: blur(4px);
+      transition: 0.2s;
+      z-index: 3;
+      font-weight: 300;
+      line-height: 1;
+    }
+    .m-carousel-btn:hover { background: rgba(212, 175, 55, 0.7); }
+    .m-carousel-btn.prev { left: 12px; }
+    .m-carousel-btn.next { right: 12px; }
+    .m-carousel-dots {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 3;
+    }
+    .m-carousel-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.3);
+      border: none;
+      padding: 0;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+    .m-carousel-dot.active { background: #d4af37; transform: scale(1.2); }
+    .m-hero-inner { text-align: center; }
+    .m-hero-video { display: none; } /* hide original video */
+  </style>
 </head>
 <body class="monsoon-page">
 
@@ -102,20 +174,28 @@
 </header>
 
 <main class="m-content">
-<!-- ============ HERO ============ -->
+<!-- ============ HERO with AUTO CAROUSEL ============ -->
 <section class="m-hero">
   <div class="m-rain" id="rain"></div>
   <div class="m-hero-inner">
     <span class="m-eyebrow">Tattva Bar &amp; Café · Andheri East, Mumbai</span>
     <h1>The rains have<br>a <em>menu</em> now.</h1>
 
-    <div class="m-hero-video">
-      <video autoplay muted loop playsinline poster="img/monsoon-poster.jpg">
-        <source src="video/monsoon-rain.mp4" type="video/mp4">
-      </video>
+    <!-- AUTO CAROUSEL -->
+    <div class="m-hero-carousel" id="heroCarousel" role="region" aria-label="Monsoon ambience carousel">
+      <div class="m-carousel-track" id="carouselTrack">
+        <div class="m-carousel-slide"><img src="img/menu/Purple Rain.jpg" alt="Monsoon cocktail Purple Rain" loading="lazy" /></div>
+        <div class="m-carousel-slide"><img src="img/menu/Chilly Crab CROQUETTES.png" alt="Storm Brew cocktail" loading="lazy" /></div>
+        <div class="m-carousel-slide"><img src="img/menu/Spiced Chicken tart.png" alt="Misty Orchard cocktail" loading="lazy" /></div>
+        <div class="m-carousel-slide"><img src="img/menu/FIRESIDE RAIN.png" alt="Fireside Rain cocktail" loading="lazy" /></div>
+        <div class="m-carousel-slide"><img src="img/menu/Blue sky pour.png" alt="Cloud Walker cocktail" loading="lazy" /></div>
+      </div>
+      <button class="m-carousel-btn prev" id="carouselPrev" aria-label="Previous slide">‹</button>
+      <button class="m-carousel-btn next" id="carouselNext" aria-label="Next slide">›</button>
+      <div class="m-carousel-dots" id="carouselDots"></div>
     </div>
 
-    <p class="m-hero-sub">Small plates that steam, cocktails that warm, a  that smells like the season's first rain — cooked up only for the monsoon.</p>
+    <p class="m-hero-sub">Small plates that steam, cocktails that warm, a taste that smells like the season's first rain — cooked up only for the monsoon.</p>
     <div class="m-proof">
       <span class="m-stars">★★★★★</span>
       <span><strong class="mono">4.6</strong> · 2,000+ regulars</span>
@@ -147,10 +227,9 @@
     
     <div class="m-course-slider">
       <div class="m-slider-wrapper" id="slider1">        
-
         <article class="m-dish-card m-dish-card--soldout">
           <div class="m-dish-image">
-                        <img src="img/menu/Purple Rain.jpg" alt="Purple Rain cocktail" loading="lazy" />
+            <img src="img/menu/Purple Rain.jpg" alt="Purple Rain cocktail" loading="lazy" />
           </div>
           <div class="m-dish-top"><h3>Purple Rain</h3><span class="m-price mono"></span></div>
           <p class="m-dish-ing">Jamun · gin &amp; vermouth highball — the first rains arrive stained in jamun purple, carrying whispers of wet earth and garden herbs</p>
@@ -182,7 +261,7 @@
         </article>
         <article class="m-dish-card">
           <div class="m-dish-image">
-<img src="img/menu/Cloud walker.png" alt="Cloud Walker" loading="lazy" />
+            <img src="img/menu/Cloud walker.png" alt="Cloud Walker" loading="lazy" />
           </div>
           <div class="m-dish-top"><h3>Cloud Walker</h3><span class="m-price mono"></span></div>
           <p class="m-dish-ing">Brandy — warm, umami rich and quietly complex, like wandering through mountain mist after a passing shower</p>
@@ -210,23 +289,7 @@
     
     <div class="m-course-slider">
       <div class="m-slider-wrapper" id="slider2">
-       <!-- <article class="m-dish-card m-dish-card--soldout">
-          <div class="m-dish-image">
-            <img src="img/menu/placeholder.png" alt="Charred Root and Fresh Mozzarella Salad" loading="lazy" />
-          </div>
-          <div class="m-dish-top"><h3>Charred Root &amp; Fresh Mozzarella Salad</h3><span class="m-price mono"></span></div>
-          <p class="m-dish-ing">Earthy roasted roots, luscious creamy base, fresh rocket leaves tossed in a zesty Greek dressing, topped with sev, nuts &amp; pomegranates</p>
-          <div class="m-tags"><span class="m-tag">Vegetarian</span><span class="m-tag">Vegetarian</span></div>
-        </article>
-        <article class="m-dish-card m-dish-card--soldout">
-          <div class="m-dish-image">
-            <img src="img/menu/placeholder.png" alt="Harumaki Spring Roll" loading="lazy" />
-          </div>
-          <div class="m-dish-top"><h3>Harumaki Spring Roll</h3><span class="m-price mono">t</span></div>
-          <p class="m-dish-ing">Earthy mushrooms, smoky charred corn, and creamy melted cheeses in a perfectly indulgent combination</p>
-          <div class="m-tags"><span class="m-tag">Vegetarian</span><span class="m-tag">Vegetarian</span></div>
-        </article>      
-        <article class="m-dish-card">
+       <!-- <article class="m-dish-card">
           <div class="m-dish-image">
             <img src="img/menu/bruschetta dabeli.png" alt="Bruschetta À La Dabeli" loading="lazy" />
           </div>
@@ -309,54 +372,7 @@
   </div>
 </section>
 
-<!-- ============ Dessert — SLIDER ============ -->
-<!--<section class="m-course m-course--light" id="indulge">
-  <div class="m-wrap">
-    <div class="m-course-head">
-      <span class="m-course-no">Act Three</span>
-      <h2>Dessert</h2>
-      <p>Desserts for the moment the rain finally slows down.</p>
-    </div>
-    
-    <div class="m-course-slider">
-      <div class="m-slider-wrapper" id="slider3">
-
-        <article class="m-dish-card">
-          <div class="m-dish-image">
-            <img src="img/menu/placeholder.png" alt="White Chocolate Panacota" loading="lazy" />
-          </div>
-          <div class="m-dish-top"><h3>White Chocolate Panacota</h3><span class="m-price mono"></span></div>
-          <p class="m-dish-ing">Creamy panna cotta layered with crisp shortbread, jamun gel, macerated jamun, and airy vanilla bean mousse</p>
-          <div class="m-tags"><span class="m-tag">Chef's Pick</span><span class="m-tag">Creamy</span></div>
-        </article>
-        <article class="m-dish-card">
-          <div class="m-dish-image">
-            <img src="img/menu/placeholder.png" alt="Chocolate Fondue" loading="lazy" />
-          </div>
-          <div class="m-dish-top"><h3>Chocolate Fondue</h3><span class="m-price mono"></span></div>
-          <p class="m-dish-ing">White chocolate ganache with rich fudge brownies, eggless herbed crackers, and crisp honey toast</p>
-          <div class="m-tags"><span class="m-tag">Sharing</span><span class="m-tag">Rich</span></div>
-        </article>
-        <article class="m-dish-card">
-          <div class="m-dish-image">
-            <img src="img/menu/placeholder.png" alt="Chocolate Pudding Cake" loading="lazy" />
-          </div>
-          <div class="m-dish-top"><h3>Chocolate Pudding Cake</h3><span class="m-price mono"></span></div>
-          <p class="m-dish-ing">Warm chocolate cake with a molten self-saucing centre, finished with a hot espresso pour</p>
-          <div class="m-tags"><span class="m-tag">Chef's Pick</span><span class="m-tag">Warm</span></div>
-        </article>
-      </div>
-      
-      <div class="m-slider-controls">
-        <button class="m-slider-btn" data-slider="3" data-dir="prev">‹</button>
-        <button class="m-slider-btn" data-slider="3" data-dir="next">›</button>
-      </div>
-      <div class="m-slider-dots" id="dots3"></div>
-    </div>
-  </div>
-</section> -->
-
-<!-- ============ Mocktail============ -->
+<!-- ============ Mocktail ============ -->
 <section class="m-course m-course--light" id="digest">
   <div class="m-wrap">
     <div class="m-course-head">
@@ -367,7 +383,6 @@
     
     <div class="m-course-slider">
       <div class="m-slider-wrapper" id="slider4">
-
         <article class="m-dish-card">
           <div class="m-dish-image">
             <img src="img/menu/Jamun Rush.png" alt="Jamun Rush mocktail" loading="lazy" />
@@ -378,7 +393,7 @@
         </article>
         <article class="m-dish-card">
           <div class="m-dish-image">
-           <img src="img/menu/Citrus Heat.png" alt="Citrus Heat mocktail" loading="lazy" />
+            <img src="img/menu/Citrus Heat.png" alt="Citrus Heat mocktail" loading="lazy" />
           </div>
           <div class="m-dish-top"><h3>Citrus Heat</h3><span class="m-price mono"></span></div>
           <p class="m-dish-ing">A sparkling yuzu cooler with spicy jalapeño, citrus tang, and a bold Tajín salt rim</p>
@@ -559,7 +574,7 @@
   </div>
 </footer>
 
-<!-- ============ REAL SITE FLOATING BUTTONS ============ -->
+<!-- ============ FLOATING BUTTONS ============ -->
 <div class="floating-btn-container">
   <a href="https://wa.me/919967114757">
     <button class="floating-btn whatsapp-btn">
@@ -603,7 +618,96 @@
   makeRain(document.getElementById('rain'), 70);
   makeRain(document.getElementById('rain2'), 50);
 
-  // ===== SLIDER FUNCTIONALITY =====
+  // ===== AUTO CAROUSEL =====
+  (function() {
+    var track = document.getElementById('carouselTrack');
+    var slides = track ? track.children : [];
+    var total = slides.length;
+    if (!track || total === 0) return;
+    var current = 0;
+    var prevBtn = document.getElementById('carouselPrev');
+    var nextBtn = document.getElementById('carouselNext');
+    var dotsContainer = document.getElementById('carouselDots');
+    var autoInterval = null;
+    var isPlaying = true;
+    var autoplayDelay = 4000;
+
+    function buildDots() {
+      if (!dotsContainer) return;
+      dotsContainer.innerHTML = '';
+      for (var i = 0; i < total; i++) {
+        var dot = document.createElement('button');
+        dot.className = 'm-carousel-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Slide ' + (i+1));
+        dot.dataset.index = i;
+        dot.addEventListener('click', function(e) {
+          var idx = parseInt(this.dataset.index);
+          goTo(idx);
+          resetAuto();
+        });
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function goTo(index) {
+      if (index < 0) index = total - 1;
+      if (index >= total) index = 0;
+      current = index;
+      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      var dots = dotsContainer ? dotsContainer.querySelectorAll('.m-carousel-dot') : [];
+      dots.forEach(function(d, i) {
+        d.classList.toggle('active', i === current);
+      });
+    }
+
+    function next() { goTo(current + 1); resetAuto(); }
+    function prev() { goTo(current - 1); resetAuto(); }
+
+    function resetAuto() {
+      if (autoInterval) {
+        clearInterval(autoInterval);
+        autoInterval = null;
+      }
+      if (isPlaying) {
+        autoInterval = setInterval(next, autoplayDelay);
+      }
+    }
+
+    function toggleAuto(play) {
+      isPlaying = play;
+      if (isPlaying) {
+        resetAuto();
+      } else {
+        if (autoInterval) {
+          clearInterval(autoInterval);
+          autoInterval = null;
+        }
+      }
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', function(e) { e.preventDefault(); prev(); });
+    if (nextBtn) nextBtn.addEventListener('click', function(e) { e.preventDefault(); next(); });
+
+    var carousel = document.getElementById('heroCarousel');
+    if (carousel) {
+      carousel.addEventListener('mouseenter', function() { toggleAuto(false); });
+      carousel.addEventListener('mouseleave', function() { toggleAuto(true); });
+    }
+
+    buildDots();
+    goTo(0);
+    resetAuto();
+
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        if (autoInterval) clearInterval(autoInterval);
+      } else {
+        if (isPlaying) resetAuto();
+      }
+    });
+  })();
+
+  // ===== SLIDER FUNCTIONALITY (existing) =====
   function initSlider(sliderId, dotsId) {
     var wrapper = document.getElementById(sliderId);
     if (!wrapper) return;
@@ -618,7 +722,6 @@
     var nextBtn = document.querySelector('[data-slider="' + sliderId.replace('slider', '') + '"][data-dir="next"]');
     var dotsContainer = document.getElementById(dotsId);
     
-    // Create dots
     if (dotsContainer && maxIndex > 0) {
       dotsContainer.innerHTML = '';
       for (var i = 0; i <= maxIndex; i++) {
@@ -638,7 +741,6 @@
       currentIndex = index;
       wrapper.style.transform = 'translateX(-' + (currentIndex * (100 / cardsPerView + (cardsPerView > 1 ? 2 : 0))) + '%)';
       
-      // Update dots
       if (dotsContainer) {
         var dots = dotsContainer.querySelectorAll('.m-slider-dot');
         dots.forEach(function(d, i) {
@@ -646,24 +748,16 @@
         });
       }
       
-      // Update buttons
       if (prevBtn) prevBtn.disabled = currentIndex === 0;
       if (nextBtn) nextBtn.disabled = currentIndex >= maxIndex;
     }
     
-    function next() {
-      if (currentIndex < maxIndex) goTo(currentIndex + 1);
-    }
+    function next() { if (currentIndex < maxIndex) goTo(currentIndex + 1); }
+    function prev() { if (currentIndex > 0) goTo(currentIndex - 1); }
     
-    function prev() {
-      if (currentIndex > 0) goTo(currentIndex - 1);
-    }
-    
-    // Event listeners
     if (prevBtn) prevBtn.addEventListener('click', prev);
     if (nextBtn) nextBtn.addEventListener('click', next);
     
-    // Update on resize
     var resizeTimeout;
     window.addEventListener('resize', function() {
       clearTimeout(resizeTimeout);
@@ -673,7 +767,6 @@
           cardsPerView = newCardsPerView;
           maxIndex = Math.max(0, totalCards - cardsPerView);
           if (currentIndex > maxIndex) goTo(maxIndex);
-          // Recreate dots
           if (dotsContainer) {
             dotsContainer.innerHTML = '';
             for (var i = 0; i <= maxIndex; i++) {
@@ -691,14 +784,11 @@
       }, 250);
     });
     
-    // Initial setup
     goTo(0);
   }
   
-  // Initialize all sliders
   initSlider('slider1', 'dots1');
   initSlider('slider2', 'dots2');
-  initSlider('slider3', 'dots3');
   initSlider('slider4', 'dots4');
 </script>
 </body>
